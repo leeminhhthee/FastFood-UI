@@ -1,0 +1,84 @@
+#fs-content-about-img {
+    background-image: url(../img/bread_wrapper.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 98px;
+    height: 251px;
+
+}
+
+#fs-content-about-img p {
+    color: #ffffff;
+    font-size: 55px;
+    padding-left: 84px;
+    /* padding-top: 218px; */
+}
+#who-we-are {
+   display: flex;
+   position: relative;
+   top: 106px;
+   justify-content: space-between;
+   padding: 30px 165px;
+}
+
+#who-we-are #who2 img {
+    transition: all 1s ease-in-out;
+
+ }
+
+ #who-we-are #who2:hover img {
+    transform: scale(1.5);  /*Phóng to ảnh lên*/
+    opacity:  1;
+
+}
+
+#who-we-are #who2 a {
+    overflow: hidden;
+    display: block;
+}
+
+#who-we-are p {
+    padding-top: 30px;
+    font-size: 18px;
+    color: #505050;
+    /* light-height: 25px; */
+    line-height: 25px
+}
+
+#who-we-are #who1 a {
+    text-decoration: none;
+    color: #d01d18;
+     border: 3px solid #d01d18;
+     border-radius: 8px;
+     position: relative;
+    top: 40px;
+    padding: 7px 14px;
+}
+
+#who-we-are #who1 a:hover {
+    background-color: #d01d18;
+    color: #ffffff;
+    transition: 2.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#year {
+    display: flex;
+    padding: 100px 100px;
+    justify-content: space-between;
+}
+
+#year .fs-year #number1,
+#year .fs-year #number2,
+#year .fs-year #number3,
+#year .fs-year #number4 {
+    font-size: 60px;
+    color: #d01d18;
+    /* margin-bottom: 0px; */
+    line-height: 80px;
+    text-align: center;
+}
+
+#year .fs-year p {
+    font-size: 28px;
+    color: #3a3a3a;
+}

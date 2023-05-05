@@ -1,0 +1,55 @@
+#get-in-touch {
+    padding-top: 180px;
+    padding-left: 9%;
+    padding-bottom: 50px;
+}
+
+#get-in-touch h1 {
+    font-size: 45px;
+    color: #d01d18;
+}
+
+#get-in-touch .your-sefl input {
+    height: 47px;
+    font-size: 16px;
+    width: 600px;
+    background-color: #cfd3d4;
+    color: #494949;
+    /* padding-top: 50px; */
+    border: 1px solid #7c7777;
+}
+
+#get-in-touch .your-sefl:hover input {
+    border: 1px solid #1b0b0b;
+}
+
+.fs-get-in1 {
+    display: flex;
+    padding: 30px 30px;
+}
+
+#get-in-touch a {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+    border: 2px solid;
+    border-radius: 12px;
+    /* padding-top: 52px; */
+    position: relative;
+    top: 38px;
+    padding: 13px 36px;
+}
+
+#get-in-touch a:hover {
+    background-color: #d01d18;
+    color: #cfd3d4;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    transform-origin: top center;
+    transform: scaleY(1);
+    transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#map {
+    padding-top: 70px;
+}

@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+.effect {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 100px;
+}
+
+  .effect h1 {
+    font-family: cursive;
+      font-size: 50px;
+      text-transform: uppercase;
+      background: url('../img/color.jpg');
+      background-clip: text ;
+      -webkit-background-clip: text;
+     color: transparent;
+     background-position: 10px;
+     animation: ani 5s infinite linear;
+     background-repeat: repeat-x;
+  }
+  @keyframes ani {
+      0% {
+          background-position: left 0px top 90px;
+      }
+      50% {
+        background-position: left 400px top -210px; 
+      }
+      100% {
+        background-position: left 400px top 80px; 
+      }
+  }
+
+  .product {
+      padding-top: 275px;
+  }
+  
+  .container .product-items {
+    
+      background-color: #bbb5b3;
+      /* text-align: center; */
+  }
+   
+  .product-items4 .product-item img,
+  .product-items3 .product-item img,
+  .product-items2 .product-item img,
+  .product-items1 .product-item img {
+      border: 2px solid rgb(109, 50, 50) ;
+      border-radius: 9px;
+  }
+
+  .product-items4 .product-item .product-item-text p,
+  .product-items3 .product-item .product-item-text p,
+  .product-items2 .product-item .product-item-text p,
+  .product-items1 .product-item .product-item-text p {
+       font-size: 20px;
+       text-align: center;
+       line-height: 20px;
+  }
+
+  .product-items4 .product-item .product-item-text h1,
+  .product-items3 .product-item .product-item-text h1,
+  .product-items2 .product-item .product-item-text h1,
+  .product-items1 .product-item .product-item-text h1 {
+    text-align: center;
+    font-family: system-ui;
+    line-height: 20px;
+  }
+
+  .product-items4 .product-item button,
+  .product-items3 .product-item button,
+  .product-items2 .product-item button,
+  .product-items1 .product-item button {
+    padding: 10px 71px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 17px;
+    transition: all 0.6s ease;
+    transform-origin: top center;
+    border-radius: 3px;
+    
+
+  }
+
+  .product-items4,  
+  .product-items3,  
+  .product-items2,  
+  .product-items1 {
+    padding: 49px 136px;
+      display: flex;
+      justify-content: space-between;
+      /* text-align: center; */
+  }
+
+  .product-items1 button:hover {
+    color: #ffff;
+    background-color: rgb(204, 70, 29);
+    
+  
+  }
+  .product-items2 button:hover {
+      color: #ffff;
+      background-color: rgb(204, 70, 29);
+      
+  }
+  .product-items3 button:hover {
+    color: #ffff;
+    background-color: rgb(204, 70, 29);
+    
+}
+.product-items4 button:hover {
+    color: #ffff;
+    background-color: rgb(204, 70, 29);
+    
+}
+
+/*-----------------cart--------*/
+
+#cart {
+  
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    background-color: rgb(221, 195, 195);
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    transition: 0.3s all ease;
+  }
+  
+  #cart button {
+      margin-top: 12px;
+      height: 30px;
+      padding: 0 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      /* background-color: tomato; */
+  }
+  
+  #cart button:hover {
+    background-color: tomato;
+  }
+
+  .product #cart_icon {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    left: 10px;
+    top: 40px;
+    font-size: 17px;
+    color: rgb(49, 6, 10);
+  }
+  
+#cart #fs-cart {
+    padding-bottom: 20px;
+    /* font-size: 100px; */
+    display: flex;
+   justify-content: center;
+   /* font-family: fantasy; */
+}
+
+#cart #fs-cart span {
+     /* font-size: 15px; */
+     text-transform: uppercase;
+     font-family: fantasy;
+     padding-left: 20px;
+
+}
+
+#cart-time  {
+    text-align: center;
+  }
+  
+  #cart-time  p {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+#cart table {
+    width: 100%;
+}
+
+#cart table thead tr:first-child {
+    text-align: center;
+   
+}
+
+#cart table tr td {
+    border-bottom: 1px solid rgb(32, 29, 29);
+    /* box-shadow: 0 0 10px 4px #bbb5b3;               */
+    padding: 12px 0;
+}
+
+
+
+/*  modal */
+
+
+
+.fomrgroup {
+    width: 88%;
+    margin: 0px 62px;
+    display: block;
+    height: 50px;
+}
+.fomrgroup input{
+    float: right;
+    width: 56%;
+    height: 26px;
+    margin-right: 61px;
+    line-height: 50px;
+}
+.fomrgroup .btn1{
+    width: 26%;
+    height: 92%;
+    background-color: rgb(72, 214, 72);
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 7px 123px;
+}
+.btn1:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.fomrgroup .btn2{
+    width: 26%;
+    height: 92%;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 7px 123px;
+}
+.btn2:hover{
+    cursor: pointer;
+    background-color: #c56562;
+}
+.fomrgroup b{
+    font-size: 20px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+    
+/* Modal Content */
+.modal-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 6px;
+    border: 5px solid #d01d18;
+    width: 40%;
+    border-radius: 17px;
+    
+}
+.modal-content form{
+    width: 100%;
+    height: 293px;
+}
+.modal-content h2{
+    text-align: center;
+    padding: 25px;
+    margin-top: -18px;
+}
+
+
+
+
+/* add new */
+.modal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* them mon moi */
+.add{
+font-family: 'Courier New', Courier, monospace;
+margin-top: 20px;
+}
+.add button{
+margin: 23px 169px;
+margin-top: -41px;
+font-size: 20px;
+border: 4px solid green;
+border-radius: 10px;
+width: 8%;
+height: 34px;
+background-color: #f1f1f1;
+font-weight: bold;
+}
+.add button:hover{
+cursor: pointer;
+background-color: green;
+color: white;
+border: 2px solid black;
+transition: 0.7s ease-in-out;   
+}
+
+.addnew {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 6px;
+    border: 3px solid #d01d18;
+    width: 40%;
+    border-radius: 10px;
+}
+.modal1 form{
+    width: 100%;
+    height: 312px;
+}
+.modal1 h2{
+    text-align: center;
+    padding: 25px;
+    margin-top: -18px;
+}
+/* The Close Button */
+.dong {
+    margin-right: 9px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.dong:hover,
+.dong:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.form1 {
+width: 88%;
+margin: 0px 62px;
+display: block;
+height: 50px;
+}
+.form1 input{
+float: right;
+width: 54%;
+height: 35px;
+margin-right: 61px;
+line-height: 50px;
+}
+.add .btn3{
+width: 26%;
+height: 92%;
+background-color: rgb(72, 214, 72);
+border: 1px solid green;
+border-radius: 10px;
+font-size: 20px;
+margin: 7px 123px;
+}
+.add .btn3:hover{
+cursor: pointer;
+background-color: green;
+}
+.add .btn4{
+width: 26%;
+height: 92%;
+background-color: white;
+border: 1px solid red;
+border-radius: 10px;
+font-size: 20px;
+margin: 7px 123px;
+}
+.add .btn4:hover{
+cursor: pointer;
+background-color: #c56562;
+}
+.form1 b{
+font-size: 18px;
+}
+
+
+.close4 {
+margin-right: 9px;
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close4:hover,.clos4:focus{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+} 
+
+
+
+.price-total {
+    text-align: right;
+}
+
+.price-total p {
+    font-weight: bold;
+    text-align: center;
+}
+
+    
+/* The Close Button */
+.close1 {
+    margin-right: 9px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.close1:hover,.close1:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}   
+.close2 {
+    margin-right: 9px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.close2:hover,.close2:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}   
+.close3 {
+    margin-right: 9px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.close3:hover,.close3:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+#search {
+    font-size: 35px;
+    position: relative;
+    top:300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 340px;
+    background-color: #bbb5b3;
+    border: 1px solid rgb(219, 219, 228);
+}
+
+#fs-search>input:hover {
+    border: 1px solid rgb(0, 0, 252);
+    background-color: black;
+    color: rgb(233, 230, 224);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#fs-fs-search a{
+    color: #000;
+}
+#fs-fs-search:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+#closing button {
+    font-size: 18px; 
+    padding: 5px 17px;
+}
+#closing button:hover {
+    background-color: rgb(255, 224, 47);
+    border-radius: 2px;
+    /* border: 1px solid rgb(255, 234, 47); */
+    color: rgb(24, 22, 22);
+    transition: 0.5s all ease-in-out;
+}
